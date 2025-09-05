@@ -9,3 +9,4 @@ Lawrence Brix Rillera
 
 Note to members: 
 1. Please name your files and variables diligently. 
+2. If you see any files with REMOVELATER, those are placeholders.
