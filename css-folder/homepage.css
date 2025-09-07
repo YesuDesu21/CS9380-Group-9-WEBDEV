@@ -1,0 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+/*If mobile UI*/
+@media(max-width: 400px){
+
+}
