@@ -1,10 +1,404 @@
+/* Reset */
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 
-/*If mobile UI*/
-@media(max-width: 400px){
+/* HAMBURGER MENU */
+#menu-toggle {
+  display: none;
+}
 
+.hamburger {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 1001;
+  color: black;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  right: -100%; 
+  width: 250px;
+  height: 100vh;
+  background: #fff;
+  box-shadow: -2px 0 8px rgba(0,0,0,0.2);
+  transition: right 0.3s ease;
+  z-index: 1000;
+  padding-top: 60px;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  margin: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+}
+
+#menu-toggle:checked ~ .menu {
+  right: 0;
+}
+
+
+body {
+  background: white;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+
+/* HERO SECTION */
+#hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+#hero .main-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-title {
+  font-size: 150px;
+  font-weight: 900;
+  color: #FF2DD1; 
+  animation: colorChange 6s infinite;
+}
+
+
+
+/* SCROLLING TEXT */
+.scrolling-text {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+
+.scrolling-text.top {
+  width: calc(100% - 80px); 
+  margin-right: auto;       
+}
+
+.scrolling-text div {
+  display: inline-block;
+  padding-left: 100%;
+  font-size: 48px;
+  font-family: 'Anton', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  animation: scroll-left 20s linear infinite, colorChange 6s infinite;
+}
+
+.scrolling-text.bottom {
+  width: 100%;
+}
+
+.scrolling-text.bottom div {
+  animation: scroll-right 20s linear infinite, colorChange 6s infinite;
+}
+
+/* GENDER EQUALITY INTRODUCTION SECTION */
+#introduction-gender-equality {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "title title"
+    "text image";
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 1rem;
+}
+
+.intro-title { 
+  grid-area: title;
+  font-family: 'Anton', sans-serif;
+  font-size: 96px;
+  text-align: right;
+  margin-bottom: 2rem;
+}
+
+.intro-left {
+  grid-area: text;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: justify;
+  align-self: start; 
+}
+
+.intro-img {
+  grid-area: image;
+  width: 100%;
+  height: 350px;
+  background: #d3d3d3; /* to be replaced with image path */
+}
+
+/* STEREOTYPES SECTION */
+#stereotypes {
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 1rem;
+  font-family: 'Anton', sans-serif;
+}
+
+#stereotypes h1 {
+  font-size: 96px;
+  font-weight: 900;
+  margin-bottom: 2rem;
+}
+
+#stereotype-overview {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  align-items: start;
+  margin-bottom: 4rem;
+  position: relative;
+}
+
+#stereotype-overview::before {
+  content: '';
+  display: block;
+  background: #d3d3d3; /* to be replaced with image path */
+  width: 100%;
+  height: 280px;
+}
+
+#stereotype-overview p {
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+#gender-stereotype-example h2 {
+  font-size: 46px;
+  font-weight: 900;
+  margin-bottom: 2rem;
+}
+
+/* CARDS */
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem; 
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.card {
+  position: relative;
+  width: 60%;
+  height: 200px;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: 0 15px 60px rgba(0,0,0,.5);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+
+.card:nth-child(1) {
+  align-self: flex-start;  
+}
+
+.card:nth-child(2) {
+  align-self: flex-end;   
+}
+
+.card:nth-child(3) {
+  align-self: flex-start;  
+}
+
+.card .face {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* CARD CONTENT */
+.card .face.face1 {
+  height: 100%;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  z-index: 0;
+}
+.card .face.face1 p {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+/* CARD COVER */
+.card .face.face2 {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  flex-direction: column;
+  border-radius: 15px;
+  transition: height 0.5s ease, border-radius 0.5s ease;
+  z-index: 2;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  padding: 1rem;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  text-shadow: 0 2px 5px rgba(0,0,0,0.6);
+  text-align: center;
+}
+
+
+.card:nth-child(1) .face.face2 p {
+  color: #ff66cc;
+}
+
+.card:nth-child(2) .face.face2 p {
+  color: #00e6cc; 
+}
+
+
+.card:nth-child(3) .face.face2 p {
+  color: #ffeb3b; 
+}
+
+/* ! these are testing images, kindly change ! */
+.card:nth-child(1) .face.face2 {
+  background-image: url('../resources/images/Card3_Image.png');
+}
+.card:nth-child(2) .face.face2 {
+  background-image: url('../resources/images/Card3_Image.png');
+}
+.card:nth-child(3) .face.face2 {
+  background-image: url('../resources/images/Card3_Image.png');
+}
+
+
+.card:hover .face.face2 {
+  height: 60px;
+  border-radius: 0 0 15px 15px;
+  align-items: center; 
+  justify-content: center;
+  font-size: 0.9rem;
+}
+
+
+#next-section-history {
+  max-width: 1200px;
+  margin: 4rem auto 0 auto;
+  padding: 2rem 1rem;
+  text-align: right; 
+}
+
+#next-section-history a {
+  text-decoration: none;
+}
+
+#next-section-history h1 {
+  font-family: 'Anton', sans-serif;
+  font-size: 72px;
+  font-weight: 900;
+  line-height: 1.1;
+  color: #15f5ba; /* teal heading */
+  transition: color 0.3s ease;
+}
+
+#next-section-history h1:hover {
+  color: #008080; /* darker teal on hover */
+}
+
+
+/* ANIMATIONS */
+@keyframes scroll-left {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+@keyframes scroll-right {
+  0%   { transform: translateX(-100%); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes colorChange {
+  0%   { color: #FF2DD1; }
+  25%  { color: #15f5ba ; }
+  50%  { color: #4287f5; }
+  75%  { color: #fcf259; }
+  100% { color: #FF2DD1; }
+}
+
+
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #f8f8f8;
+  color: #555;
+  font-weight: bold;
+}
+
+/* MOBILE */
+@media(max-width: 400px) {
+  .main-title {
+    font-size: 2.5rem;
+  }
+
+  .scrolling-text div {
+    font-size: 1rem;
+  }
+}
+
+
+/* FONTS */
+@font-face {
+  font-family: 'Anton';
+  src: url('../resources/fonts/Anton/Anton-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#hero .main-title,
+#hero .scrolling-text div {
+  font-family: 'Anton', sans-serif;
+}
+
+
+@font-face {
+  font-family: 'Work Sans';
+  src: url('../resources/fonts/Work_Sans/static/WorkSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+p {
+  font-family: 'Work Sans', Arial, sans-serif;
 }
