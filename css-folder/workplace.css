@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+/* HAMBURGER MENU */
+    #menu-toggle {
+      display: none;
+    }
+
+    .hamburger {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      font-size: 2rem;
+      cursor: pointer;
+      z-index: 1001;
+      color: black;
+    }
+
+    .menu {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 250px;
+      height: 100vh;
+      background: #fff;
+      box-shadow: -2px 0 8px rgba(0,0,0,0.2);
+      transition: right 0.3s ease;
+      z-index: 1000;
+      padding-top: 60px;
+    }
+
+    .menu ul {
+      list-style: none;
+    }
+
+    .menu li {
+      margin: 20px;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: black;
+      font-size: 1.2rem;
+    }
+
+    #menu-toggle:checked ~ .menu {
+      right: 0;
+    }
+
+/* SCROLLING TEXT */
+    .scrolling-text {
+      overflow: hidden;
+      white-space: nowrap;
+      position: relative;
+    }
+
+    .scrolling-text.top {
+      width: calc(100% - 80px);
+      margin-right: auto;
+    }
+
+    .scrolling-text div {
+      display: inline-block;
+      padding-left: 100%;
+      font-size: 48px;
+      font-family: 'Anton', sans-serif;
+      font-weight: bold;
+      text-transform: uppercase;
+      animation: scroll-left 20s linear infinite, colorChange 6s infinite;
+    }
+
+/* TEXT ANIMATION */
+    @keyframes scroll-left {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
+
+    @keyframes colorChange {
+      0%   { color: #FF2DD1; }
+      25%  { color: #15f5ba ; }
+      50%  { color: #4287f5; }
+      75%  { color: #fcf259; }
+      100% { color: #FF2DD1; }
+    }
+
+/* MOBILE */
+    @media(max-width: 400px) {
+      .scrolling-text div {
+        font-size: 1rem;
+      }
+    }
+
+/* FONTS */
+    @font-face {
+      font-family: 'Anton';
+      src: url('../resources/fonts/Anton/Anton-Regular.ttf') format('truetype');
+    }
