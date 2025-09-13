@@ -13,7 +13,6 @@ body {
     #menu-toggle {
       display: none;
     }
-
     .hamburger {
       position: absolute;
       top: 10px;
@@ -23,7 +22,6 @@ body {
       z-index: 1001;
       color: black;
     }
-
     .menu {
       position: fixed;
       top: 0;
@@ -40,17 +38,14 @@ body {
     .menu ul {
       list-style: none;
     }
-
     .menu li {
       margin: 20px;
     }
-
     .menu a {
       text-decoration: none;
       color: black;
       font-size: 1.2rem;
     }
-
     #menu-toggle:checked ~ .menu {
       right: 0;
     }
@@ -61,12 +56,10 @@ body {
       white-space: nowrap;
       position: relative;
     }
-
     .scrolling-text.top {
       width: calc(100% - 80px);
       margin-right: auto;
     }
-
     .scrolling-text div {
       display: inline-block;
       padding-left: 100%;
@@ -82,13 +75,29 @@ body {
       0%   { transform: translateX(0); }
       100% { transform: translateX(-100%); }
     }
-
     @keyframes colorChange {
       0%   { color: #FF2DD1; }
       25%  { color: #15f5ba ; }
       50%  { color: #4287f5; }
       75%  { color: #fcf259; }
       100% { color: #FF2DD1; }
+    }
+
+/* PAGE TITLE */
+    .title-text {
+        font-family: 'Anton';
+        font-size: 7rem;
+        text-align: center;
+        margin: 60px auto;
+        max-width: 1400px;
+        line-height: 1.5;
+    }
+
+/* PAGE SUB-TITLE */
+    .sub-title-text {
+      font-family: 'Work Sans', sans-serif;
+      font-size: 2rem;
+      text-align: center;
     }
 
 /* MOBILE */
@@ -102,4 +111,9 @@ body {
     @font-face {
       font-family: 'Anton';
       src: url('../resources/fonts/Anton/Anton-Regular.ttf') format('truetype');
+    }
+
+    @font-face {
+      font-family: 'Work Sans';
+      src: url('../resources/fonts/Work_Sans/WorkSans-VariableFont_wght.ttf') format('truetype');
     }
