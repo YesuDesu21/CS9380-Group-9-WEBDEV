@@ -165,7 +165,7 @@ body {
         text-decoration: underline;
     }
 
-/* 1ST SECTION */
+/* 1ST SECTION _________________________________________________*/
     .section-title,
     .section-text {
         font-family: 'Work Sans', sans-serif;
@@ -367,12 +367,120 @@ body {
     }
 
     .image-item p {
+      font-family: 'Work Sans', sans-serif;
       font-size: 1.2rem;
       color: #333;
       line-height: 1.4;
     }
 
+/* 2ND SECTION _________________________________________________*/
+    .section-title,
+    .section-text {
+        font-family: 'Work Sans', sans-serif;
+        max-width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+    }
 
+    .section-title {
+        font-size: 2.3rem;
+        margin-top: 230px;
+        margin-bottom: 25px;
+    }
+
+    .section-title .bold-part {
+        font-weight: bold;
+    }
+    .section-title .normal-part {
+        font-weight: normal;
+    }
+
+    .section-text {
+        font-size: 1.6rem;
+        text-align: justify;
+        line-height: 1.2;
+        margin-bottom: 100px;
+    }
+
+/* DIVIDER */
+    .image-container {
+        text-align: center;
+        margin: 40px 0;
+        margin-bottom: 200px;
+    }
+
+    .media-img {
+        max-width: 40%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
+
+/* EXAMPLES */
+    .case-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .case-item {
+        text-align: center;
+    }
+
+    .case-item img {
+        width: 80%;
+        height: auto;
+        border-radius: 6px;
+        margin-bottom: 10px;
+        object-fit: cover;
+        aspect-ratio: 16 / 6;
+    }
+
+    .case-item p {
+        font-family: 'Work Sans', sans-serif;
+        font-size: 1.2rem;
+        color: #333;
+        line-height: 1.5;
+    }
+
+/* KEY MESSAGE */
+    .key-image {
+        display: block;
+        margin-top: 150px;
+        margin-left: 200px;
+        margin-bottom: 150px;
+        max-width: 500px;
+        height: auto;
+    }
+
+/* SOLUTIONS */
+    .arrow-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        max-width: 90%;
+    }
+
+    .arrow-list li {
+        background: #d3d3d3;
+        padding: 23px 40px 23px 30px;
+        margin: 15px 0 15px 100px;
+        position: relative;
+        font-size: 1.6rem;
+        display: inline-block;
+        clip-path: polygon(
+        0 0,
+        calc(100% - 30px) 0,
+        100% 50%,
+        calc(100% - 30px) 100%,
+        0 100%
+        );
+    }
 
 /* MOBILE */
     @media(max-width: 400px) {
