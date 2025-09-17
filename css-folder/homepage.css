@@ -373,13 +373,66 @@ footer {
 }
 
 /* MOBILE */
-@media(max-width: 400px) {
+@media(max-width: 768px) {
   .main-title {
     font-size: 2.5rem;
   }
 
   .scrolling-text div {
+    font-size: 2rem;
+  }
+
+  #introduction-gender-quality {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .intro-img {
+    width: 10rem;
+    height: auto;
+    aspect-ratio: 4/3;
+  }
+
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: 'Pixelify';
+    src: url('..//resources/fonts/Pixelify/static/PixelifySans-Bold.ttf');
+  }
+
+  .intro-title {
+    text-align: center;
+    font-size: 2.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  h1.main-title{
+    font-size: 5rem;
+    font-family: 'Jersey';
+    src: url('../resources/fonts/Jersey/Jersey10-Regular.ttf') format('truetype');
+    font-weight: bold;
+  }
+
+  h1 {
+    font-size: 0.5rem;
+    font-family: 'Jersey';
+    src: url('../resources/fonts/Jersey/Jersey10-Regular.ttf') format('truetype');
+    font-weight: bold;
+  }
+
+  h2 {
     font-size: 1rem;
+    font-family: 'Jersey';
+    src: url('../resources/fonts/Jersey/Jersey10-Regular.ttf') format('truetype');
+    font-weight: bold;
+    text-align: center;
+  }
+
+  p {
+    font-family: 'Pixelify';
+    src: url('..//resources/fonts/Pixelify/static/PixelifySans-Regular.ttf') format('truetype');
   }
 }
 
