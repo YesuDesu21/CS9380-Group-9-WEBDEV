@@ -96,10 +96,11 @@ body {
         font-family: 'Anton';
         font-size: 7rem;
         text-align: center;
-        margin: 60px auto;
+        margin: 120px auto 60px auto; /* top right bottom left */
         max-width: 1400px;
-        line-height: 1.5;
+        line-height: 1.2;
         color: #944CE6;
+        font-weight: 900;
     }
 
 /* PAGE SUB-TITLE */
@@ -515,12 +516,12 @@ body {
       font-size: 72px;
       font-weight: 900;
       line-height: 1.1;
-      color: #FF2DD1;
+      color: #944CE6;
       transition: color 0.3s ease;
     }
 
     #next-section h1:hover {
-      color: #8f2478;
+      color: #742FC2;
     }
 
 /* TOP BUTTON */
