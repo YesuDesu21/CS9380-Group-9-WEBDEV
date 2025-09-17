@@ -91,6 +91,140 @@ body {
       100% { color: #FF2DD1; }
     }
 
+/* ABOUT US SECTION */
+    .about-section {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 30px;
+        padding: 210px;
+    }
+
+    .about-title h1 {
+        font-family: 'Anton';
+        font-size: 9rem;
+        font-weight: 900;
+        line-height: 1.1;
+        margin: 0;
+        text-align: center;
+        letter-spacing: 3px;
+        color: #73CB7A;
+    }
+
+    .about-text {
+        font-family: 'Work Sans', sans-serif;
+        max-width: 670px;
+        font-size: 1.6rem;
+        line-height: 1.2;
+        text-align: justify;
+    }
+
+/* MEET THE TEAM */
+    .team-section {
+        padding: 60px;
+        margin-left: 140px;
+    }
+
+    .team-title {
+        font-family: 'Anton', sans-serif;
+        font-size: 6rem;
+        margin-bottom: 50px;
+        letter-spacing: 3px;
+        margin-left: -40px;
+        color: #4B6CFF;
+    }
+
+    .team-member {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 40px;
+        gap: 60px;
+    }
+
+    .team-img {
+        width: 280px;
+        height: 280px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .team-info h3 {
+        font-family: 'Anton', sans-serif;
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+        letter-spacing: 1.5px;
+        color: #4B6CFF;
+    }
+
+    .team-info p {
+        font-family: 'Work Sans', sans-serif;
+        font-size: 1.6rem;
+        line-height: 1.1;
+        text-align: justify;
+        max-width: 800px;
+    }
+
+/* REFERENCES */
+    .references-section {
+        padding: 60px;
+        margin-top: -30px;
+        margin-left: 140px;
+        margin-right: 140px;
+    }
+
+    .references-title {
+        font-family: 'Anton', sans-serif;
+        font-size: 6rem;
+        margin-bottom: 50px;
+        letter-spacing: 3px;
+        margin-left: -40px;
+        color: #9C64DD;
+    }
+
+    #team-references li {
+        margin-bottom: 13px;
+        font-family: 'Work Sans', sans-serif;
+        font-size: 1.5rem;
+        line-height: 1.2;
+        text-align: left;
+        text-align: justify;
+    }
+
+    #team-references li a {
+        text-decoration: none;
+        color: black;
+    }
+
+    #team-references li a:hover {
+        text-decoration: underline;
+    }
+
+/* TOP BUTTON */
+    .back-to-top {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      width: 50px;
+      height: 50px;
+      background: #333;
+      color: #fff;
+      font-size: 2rem;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+      transition: background 0.3s;
+    }
+
+    .back-to-top:hover {
+      background: #555;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+
 /* MOBILE */
     @media(max-width: 400px) {
       .scrolling-text div {
@@ -100,8 +234,11 @@ body {
 
 /* FONTS */
     @font-face {
-      font-family: 'Anton';
-      src: url('../resources/fonts/Anton/Anton-Regular.ttf') format('truetype');
+        font-family: 'Anton';
+        src: url('../resources/fonts/Anton/Anton-Regular.ttf') format('truetype');
     }
-/*About us section*/
-/**/
+
+    @font-face {
+        font-family: 'Work Sans';
+        src: url('../resources/fonts/Work_Sans/WorkSans-VariableFont_wght.ttf') format('truetype');
+    }
