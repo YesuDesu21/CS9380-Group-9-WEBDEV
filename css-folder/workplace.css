@@ -490,6 +490,39 @@ body {
         );
     }
 
+/* NEXT PAGE */
+    #next-section {
+      max-width: 1500px;
+      margin: 4rem auto 0 auto;
+      padding: 2rem 1rem;
+      text-align: right;
+    }
+
+    #next-section h1 .sub-heading {
+      display: block;
+      font-size: 48px;
+      font-weight: 700;
+      margin-top: 0;
+      line-height: 1;
+    }
+
+    #next-section a {
+      text-decoration: none;
+    }
+
+    #next-section h1 {
+      font-family: 'Anton', sans-serif;
+      font-size: 72px;
+      font-weight: 900;
+      line-height: 1.1;
+      color: #FF2DD1;
+      transition: color 0.3s ease;
+    }
+
+    #next-section h1:hover {
+      color: #8f2478;
+    }
+
 /* TOP BUTTON */
     .back-to-top {
       position: fixed;
