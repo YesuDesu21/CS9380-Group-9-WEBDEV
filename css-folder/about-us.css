@@ -91,20 +91,17 @@ body {
   100% { color: #FF2DD1; }
 }
 
-/* FONTS */
-@font-face {
-  font-family: 'Anton';
-  src: url('../resources/fonts/Anton/Anton-Regular.ttf') format('truetype');
-}
-/*About us section*/
-
-
 /* MOBILE */
-@media screen and (max-width: 375px) {
-  body{
-    background-color: black;
-  }
-  .scrolling-text div {
-    font-size: 1rem;
-  }
-}
+    @media(max-width: 400px) {
+      .scrolling-text div {
+        font-size: 1rem;
+      }
+    }
+
+/* FONTS */
+    @font-face {
+      font-family: 'Anton';
+      src: url('../resources/fonts/Anton/Anton-Regular.ttf') format('truetype');
+    }
+/*About us section*/
+/**/
