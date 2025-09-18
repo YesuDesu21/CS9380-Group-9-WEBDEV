@@ -486,11 +486,6 @@ html {
     flex-wrap: wrap;
   }
 
-  .intro-title {
-    font-size: 45px;
-    text-align: right;
-  }
-
   .intro-img {
     grid-area: unset;
     display: flex;
@@ -515,10 +510,8 @@ html {
   }
 
   .intro-title {
-    text-align: center;
+    text-align: right;
     font-size: 2.5rem;
-    display: flex;
-    flex-direction: column;
   }
 
   h1.main-title {
@@ -535,10 +528,28 @@ html {
     src: url("../resources/fonts/Jersey/Jersey10-Regular.ttf")
       format("truetype");
     font-weight: bold;
+    text-align: center;
   }
 
-  h2 {
-    font-size: 1rem;
+  #stereotype-overview {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .stereotype-img {
+    grid-area: unset;
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    height: auto;
+    aspect-ratio: 16/9;
+  }
+  .stereotype-text {
+    padding: 10px;
+  }
+
+  #gender-stereotype-example h2 {
+    font-size: 3rem;
     font-family: "Jersey";
     src: url("../resources/fonts/Jersey/Jersey10-Regular.ttf")
       format("truetype");
@@ -546,6 +557,9 @@ html {
     text-align: center;
   }
 
+  #gender-stereotype-example p {
+    padding: 20px;
+  }
   p {
     font-family: "Pixelify";
     src: url("..//resources/fonts/Pixelify/static/PixelifySans-Regular.ttf")
