@@ -225,13 +225,6 @@ body {
       scroll-behavior: smooth;
     }
 
-/* MOBILE */
-    @media(max-width: 400px) {
-      .scrolling-text div {
-        font-size: 1rem;
-      }
-    }
-
 /* FONTS */
     @font-face {
       font-family: 'Anton';
@@ -333,4 +326,20 @@ body {
     font-size: 1.1rem;
     font-weight: normal;
     margin-bottom: 0;
+}
+
+/*======================MOBILE VERSION=========================*/
+/* MOBILE */
+@media(max-width: 700px) {
+  body{
+    background-image: url('../resources/images/About_Us/about-us-mobile-background.jpg');
+    background-repeat: repeat;
+    background-size: 20px 20px;
+    background-clip: content-box;       /* optional if you use padding */
+    max-width: 300px;                   /* width of the column */
+    margin: 0 auto; 
+  }
+  .scrolling-text div {
+    font-size: 1rem;
+  }
 }
