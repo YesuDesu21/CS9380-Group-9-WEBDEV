@@ -127,8 +127,8 @@ body {
 
 
 .scrolling-text.top {
-  width: calc(100% - 80px); 
-  margin-right: auto;       
+  width: calc(100% - 80px);
+  margin-right: auto;
 }
 
 .scrolling-text div {
@@ -334,12 +334,12 @@ body {
   text-align: justify;
 }
 
-#next-section {
-  max-width: 1500px;
-  margin: 4rem auto 0 auto;
-  padding: 2rem 1rem;
-  text-align: right; 
-}
+    #next-section {
+      max-width: 1500px;
+      margin: 4rem auto 10rem auto;
+      padding: 2rem 1rem;
+      text-align: right;
+    }
 
 #next-section h1 .sub-heading {
   display: block;     
@@ -501,121 +501,116 @@ body {
 
 
 /* FONTS */
-@font-face {
-  font-family: 'Anton';
-  src: url('../resources/fonts/Anton/Anton-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
+    @font-face {
+      font-family: 'Anton';
+      src: url('../resources/fonts/Anton/Anton-Regular.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
 
-#hero .main-title,
-#hero .scrolling-text div {
-  font-family: 'Anton', sans-serif;
-}
+    #hero .main-title,
+    #hero .scrolling-text div {
+      font-family: 'Anton', sans-serif;
+    }
 
+    @font-face {
+      font-family: 'Work Sans';
+      src: url('../resources/fonts/Work_Sans/static/WorkSans-Regular.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
 
-@font-face {
-  font-family: 'Work Sans';
-  src: url('../resources/fonts/Work_Sans/static/WorkSans-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-p {
-  font-family: 'Work Sans', Arial, sans-serif;
-}
+    p {
+      font-family: 'Work Sans', Arial, sans-serif;
+    }
 
 /* FOOTER */
-.gender-equality-header {
-    background: transparent;
-    color: #333;
-    padding: 2rem;
-    font-weight: normal;
-    position: relative;
-    font-family: 'Work Sans';
-    src: url('../resources/fonts/Work_Sans/WorkSans-VariableFont_wght.ttf') format('truetype');
-}
+    .gender-equality-header {
+        background: transparent;
+        color: #333;
+        padding: 2rem;
+        font-weight: normal;
+        position: relative;
+        font-family: 'Work Sans';
+        src: url('../resources/fonts/Work_Sans/WorkSans-VariableFont_wght.ttf') format('truetype');
+    }
 
-.header-container {
-    margin: 0 auto;
-    background: #FFFF00;
-
-}
+    .header-container {
+        margin: 0 auto;
+        background: #FFFF00;
+    }
 
 /* Footer Styles */
-.footer-container {
-    background: #FFFF00;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 2.5rem;
-    padding-bottom: 1rem;
+    .footer-container {
+        background: #FCF259;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1rem;
+    }
 
-}
+    .text-pink {
+        color: #FF2DD1;
+        text-shadow: none;
+    }
 
-.text-pink {
-    color: #FF2DD1;
-    text-shadow: none;
-}
-
-.text-blue {
-    color: #1E88E5;
-    text-shadow: none;
-}
+    .text-blue {
+        color: #1E88E5;
+        text-shadow: none;
+    }
 
 /* Contact Information */
-.contact-info {
-    margin-bottom: 2rem;
-    margin-top: 1rem;
-}
+    .contact-info {
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+    }
 
-.contact-row {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 3rem;
-    margin-bottom: 1.5rem;
-}
+    .contact-row {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 3rem;
+        margin-bottom: 1.5rem;
+    }
 
-.contact-person {
-    text-align: center;
-    font-size: 1.6rem;
-    min-width: 220px;
-}
+    .contact-person {
+        text-align: center;
+        font-size: 1.6rem;
+        min-width: 220px;
+    }
 
-.contact-person .name {
-    display: block;
-    color: #E91E7A;
-    font-weight: bold;
-    margin-bottom: 0.3rem;
-    text-shadow: none;
-    letter-spacing: 0.5px;
-}
+    .contact-person .name {
+        display: block;
+        color: #E91E7A;
+        font-weight: bold;
+        margin-bottom: 0.3rem;
+        text-shadow: none;
+        letter-spacing: 0.5px;
+    }
 
-.contact-person .email {
-    display: block;
-    color: #000000;
-    font-size: 1rem;
-    font-weight: normal;
-    letter-spacing: 0.3px;
-}
+    .contact-person .email {
+        display: block;
+        color: #000000;
+        font-size: 1rem;
+        font-weight: normal;
+        letter-spacing: 0.3px;
+    }
 
 /* Footer Bottom */
-.footer-bottom {
-    display: flex;
-    justify-content: center;
-    align-items: center;    
-    margin-top: 0;
-    margin-bottom: 0;
-    flex-wrap: wrap;
-    gap: 0;
-    text-align: center;    
-    width: 100%;            
-}
+    .footer-bottom {
+        display: flex;
+        align-items: left;
+        margin-top: 0;
+        margin-bottom: 0;
+        flex-wrap: wrap;
+        gap: 0;
+        width: 100%;
+    }
 
 
-.copyright {
-    color: #333;
-    font-size: 1.1rem;
-    font-weight: normal;
-    margin-bottom: 0;
-}
+    .copyright {
+        color: #333;
+        font-size: 1.1rem;
+        font-weight: normal;
+        margin-bottom: 0;
+    }
