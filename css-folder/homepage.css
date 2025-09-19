@@ -26,8 +26,13 @@ body {
   font-size: 2rem;
   cursor: pointer;
   z-index: 1001;
+  color: white;
+}
+
+#menu-toggle:checked + .hamburger {
   color: black;
 }
+
 
 .menu {
   position: fixed;
@@ -176,6 +181,7 @@ body {
   text-align: right;
   margin-top: 0;
   margin-bottom: 1rem;
+  color: #ff2dd1;
 }
 
 .intro-left {
@@ -211,6 +217,8 @@ body {
   font-weight: 900;
   margin-bottom: 1rem;
   margin-top: 2rem;
+  color: #4287f5;
+
 }
 
 /* STEREOTYPES SECTION */
@@ -255,6 +263,7 @@ body {
   font-weight: 900;
   margin-bottom: 2rem;
   margin-top: 4rem;
+  color: #15f5ba;
 }
 
 /* CARDS */
