@@ -1,3 +1,7 @@
+
+/* DESKTOP VERSION */
+/* [ line 622 for mobile version ] */
+
 * {
   margin: 0;
   padding: 0;
@@ -116,7 +120,7 @@ body {
 }
 
 .main-title {
-  font-size: 150px;
+  font-size: clamp(2.5rem, 10vw, 150px); 
   font-weight: 900;
   color: #ff2dd1;
   animation: colorChange 6s infinite;
@@ -137,7 +141,7 @@ body {
 .scrolling-text div {
   display: inline-block;
   padding-left: 100%;
-  font-size: 48px;
+  font-size: clamp(1.5rem, 5vw, 48px);
   font-family: "Anton", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
@@ -168,15 +172,15 @@ body {
 .intro-title {
   grid-area: title;
   font-family: "Anton", sans-serif;
-  font-size: 96px;
+  font-size: clamp(2rem, 6vw, 96px);
   text-align: right;
   margin-top: 0;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .intro-left {
   grid-area: text;
-  font-size: 1rem;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
   line-height: 1.6;
   text-align: justify;
   align-self: start;
@@ -185,11 +189,13 @@ body {
 .intro-img {
   grid-area: image;
   width: 100%;
-  height: 400px;
+  height: auto;
+  min-height: 250px;
   background-image: url("../resources/images/Homepage/IntroImage.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  margin-top: 0px;
 }
 
 /* STEREOTYPES SECTION */
@@ -201,86 +207,99 @@ body {
 }
 
 #stereotypes h1 {
-  font-size: 96px;
+  font-size: clamp(2rem, 6vw, 96px);
   font-weight: 900;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
 }
 
+/* STEREOTYPES SECTION */
 #stereotype-overview {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  align-items: start;
-  margin-bottom: 4rem;
-  position: relative;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "image"
+    "text";
+  gap: 1.5rem;
 }
 
 .stereotype-img {
+  grid-area: image;
   width: 100%;
-  height: 400px;
+  max-width: 700px;    
+  aspect-ratio: 16 / 9; 
+  margin: 0 auto;
   background-image: url("../resources/images/Homepage/StereotypesImage.png");
-  background-size: cover;
-  background-position: center;
+  background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
 }
+
+
+.stereotype-text {
+  grid-area: text;
+}
+
+
 
 .stereotype-text p {
   font-family: "Work Sans", sans-serif;
-  font-size: 1rem;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
   line-height: 1.6;
   text-align: justify;
   margin-bottom: 0;
 }
 
 #gender-stereotype-example h2 {
-  font-size: 96px;
+  font-size: clamp(2rem, 6vw, 96px);
   font-weight: 900;
   margin-bottom: 2rem;
+  margin-top: 4rem;
 }
 
 /* CARDS */
 .card-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr; 
   gap: 1rem 1.5rem;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 1rem;
 }
 
+@media (min-width: 768px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
 .card {
   position: relative;
   width: 100%;
-  height: 200px;
+  min-height: 100px;                 
+  height: clamp(100px, 35vw, 300px); 
   background: #fff;
   box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
-/* FACE CONTENT */
-.card .face {
+.card .face.face1 {
+  padding: 20px;
+   position: relative;  
+  text-align: center;
+  font-family: "Work Sans", sans-serif;
+  z-index: 1;
+  flex: 1;
+}
+
+.card .face.face2 {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-}
-
-.card .face.face1 {
-  height: 100%;
-  padding: 20px;
-  text-align: center;
-  font-family: "Work Sans", sans-serif;
-  box-sizing: border-box;
-  z-index: 0;
-}
-.card .face.face1 p {
-  font-size: 1rem;
-  font-weight: 500;
-}
-
-.card .face.face2 {
-  height: 100%;
+  height: 100%;  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -288,16 +307,37 @@ body {
   border-radius: 15px;
   transition: height 0.5s ease, border-radius 0.5s ease;
   z-index: 2;
-  overflow: hidden;
   background-size: cover;
   background-position: center;
-  padding: 1rem;
   color: white;
   font-family: "Anton", sans-serif;
-  font-size: 1rem;
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  padding: 1rem;
   font-weight: bold;
   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
   text-align: center;
+}
+
+.card:hover .face.face2 {
+  height: 80px; 
+  border-radius: 0 0 15px 15px;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+.card .face {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.card .face.face1 p {
+  font-size: clamp(0.85rem, 2vw, 1.2rem); 
+  line-height: 1.4;
+  font-weight: 500;
+  margin-top: 5%;
 }
 
 .card:nth-child(1) .face.face2 p {
@@ -330,22 +370,13 @@ body {
   background-image: url("../resources/images/Homepage/Card4Image.png");
 }
 
-.card:hover .face.face2 {
-  height: 60px;
-  border-radius: 0 0 15px 15px;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.9rem;
-}
-
 .stereotype-summary {
   margin-top: 5rem;
   font-family: "Work Sans", sans-serif;
-  font-size: 1rem;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
   line-height: 1.6;
   text-align: justify;
 }
-
 #next-section {
   max-width: 1500px;
   margin: 4rem auto 10rem auto;
@@ -353,30 +384,34 @@ body {
   text-align: right;
 }
 
+#next-section h1 {
+  font-family: 'Anton', sans-serif;
+  font-size: clamp(2rem, 6vw, 4.5rem); 
+  font-weight: 900;
+  line-height: 1.05; 
+  color: #ff2dd1; 
+  transition: color 0.3s ease;
+  margin: 0; 
+}
+
 #next-section h1 .sub-heading {
-  display: block;
-  font-size: 48px;
-  font-weight: 700;
-  margin-top: 0;
-  line-height: 1;
+  display: block;     
+  font-size: clamp(1.2rem, 4vw, 2.5rem); 
+  font-weight: 700; 
+  margin-top: 0.5rem; 
+  line-height: 1.2; 
 }
 
 #next-section a {
   text-decoration: none;
 }
 
-#next-section h1 {
-  font-family: "Anton", sans-serif;
-  font-size: 72px;
-  font-weight: 900;
-  line-height: 1.1;
-  color: #ff2dd1;
-  transition: color 0.3s ease;
-}
-
 #next-section h1:hover {
   color: #8f2478;
 }
+
+
+
 
 .highlight-pink {
   font-weight: bold;
@@ -471,102 +506,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* MOBILE */
-@media (max-width: 768px) {
-  .main-title {
-    font-size: 2.5rem;
-  }
-
-  .scrolling-text div {
-    font-size: 2rem;
-  }
-
-  #introduction-gender-equality {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .intro-img {
-    grid-area: unset;
-    display: flex;
-    flex-direction: column;
-    width: 20rem;
-    height: auto;
-    aspect-ratio: 16/9;
-  }
-
-  .intro-left {
-    grid-area: unset;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .card-container {
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    font-family: "Pixelify";
-    src: url("..//resources/fonts/Pixelify/static/PixelifySans-Bold.ttf");
-  }
-
-  .intro-title {
-    text-align: right;
-    font-size: 2.5rem;
-  }
-
-  h1.main-title {
-    font-size: 5rem;
-    font-family: "Jersey";
-    src: url("../resources/fonts/Jersey/Jersey10-Regular.ttf")
-      format("truetype");
-    font-weight: bold;
-  }
-
-  #stereotypes h1 {
-    font-size: 45px;
-    font-family: "Jersey";
-    src: url("../resources/fonts/Jersey/Jersey10-Regular.ttf")
-      format("truetype");
-    font-weight: bold;
-    text-align: center;
-  }
-
-  #stereotype-overview {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .stereotype-img {
-    grid-area: unset;
-    display: flex;
-    flex-direction: column;
-    width: 30rem;
-    height: auto;
-    aspect-ratio: 16/9;
-  }
-  .stereotype-text {
-    padding: 10px;
-  }
-
-  #gender-stereotype-example h2 {
-    font-size: 3rem;
-    font-family: "Jersey";
-    src: url("../resources/fonts/Jersey/Jersey10-Regular.ttf")
-      format("truetype");
-    font-weight: bold;
-    text-align: center;
-  }
-
-  #gender-stereotype-example p {
-    padding: 20px;
-  }
-  p {
-    font-family: "Pixelify";
-    src: url("..//resources/fonts/Pixelify/static/PixelifySans-Regular.ttf")
-      format("truetype");
-  }
-}
-
 /* FONTS */
 @font-face {
   font-family: "Anton";
@@ -609,7 +548,6 @@ p {
   background: #ffff00;
 }
 
-/* Footer Styles */
 .footer-container {
   background: #fcf259;
   padding-left: 1rem;
@@ -628,7 +566,6 @@ p {
   text-shadow: none;
 }
 
-/* Contact Information */
 .contact-info {
   margin-bottom: 2rem;
   margin-top: 1rem;
@@ -665,7 +602,6 @@ p {
   letter-spacing: 0.3px;
 }
 
-/* Footer Bottom */
 .footer-bottom {
   display: flex;
   align-items: left;
@@ -681,4 +617,39 @@ p {
   font-size: 1.1rem;
   font-weight: normal;
   margin-bottom: 0;
+}
+
+/* MOBILE VERSION */
+@media (max-width: 768px) {
+  #introduction-gender-equality {
+    grid-template-columns: 1fr; 
+    grid-template-areas:
+      "title"
+      "image"  
+      "text";
+  }
+
+  .intro-title {
+    text-align: center; 
+  }
+
+  .intro-img {
+    margin: 0 auto;
+  }
+}
+
+
+/* FONTS */
+@font-face {
+  font-family: 'PixelifySans';
+  src: url('../resources/fonts/Pixelify/PixelifySans-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Jersey';
+  src: url('../resources/fonts/Jersey/Jersey10-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
