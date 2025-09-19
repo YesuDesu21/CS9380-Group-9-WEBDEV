@@ -697,6 +697,7 @@ h1, h2, h3, h4, h5, h6, .menu li a,
     margin: 0 auto;
     background-image: url('../resources/images/Homepage/Mob-IntroImage.png');
   }
+<<<<<<< HEAD
 
   .stereotype-img {
     background-image: url('../resources/images/Homepage/Mob-StereotypeImage.png');
@@ -786,6 +787,16 @@ h1, h2, h3, h4, h5, h6, .menu li a,
     color: #ff008c;
   }
 }
+=======
+  p,
+  .intro-left,
+  .intro-desc,
+  .cards > li > p,
+  .contact-person,
+  .copyright {
+    font-family: 'PixelifySans', sans-serif !important;
+  }
+>>>>>>> ca1941299135def738d620a3402e0f4e591cfe45
 }
 
 
