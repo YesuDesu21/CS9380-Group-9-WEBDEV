@@ -146,6 +146,7 @@ body {
   text-align: center;
   margin-top: 60px;
   margin-bottom: 200px;
+  color: white;
 }
 
 /*INTRO IMAGE TESTIMONIES*/
@@ -609,11 +610,12 @@ html {
   }
 
   .title-text {
-    font-size: clamp(2.5rem, 6vw, 96px);
+    font-size: clamp(3rem, 6vw, 96px);
   }
 
   .sub-title-text {
     font-size: clamp(1.5rem, 6vw, 70px);
+    color: white;
   }
 
   .section-title {
@@ -639,6 +641,39 @@ html {
   .cause-text {
     max-width: 85%;
     margin: 0px 10px 20px 10px;
+  }
+
+  .hamburger {
+    color: white;
+  }
+
+  .image-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "image"
+      "text";
+    gap: 1.5rem;
+  }
+
+  .image-item img {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    display: block;
+    justify-self: center;
+  }
+
+  .key-image {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: 10px;
+  }
+
+  .arrow-list li {
+    display: flex;
+    text-align: left;
   }
 }
 
