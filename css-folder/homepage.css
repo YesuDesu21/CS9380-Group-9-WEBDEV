@@ -545,7 +545,7 @@ p {
 .gender-equality-header {
   background: transparent;
   color: #333;
-  padding: 2rem 1rem; /* desktop padding */
+  padding: 2rem 1rem; 
   font-weight: normal;
   position: relative;
   font-family: "Work Sans";
@@ -591,7 +591,7 @@ p {
 
 .contact-person {
   text-align: center;
-  font-size: clamp(1rem, 2vw, 1.6rem); /* responsive font size */
+  font-size: clamp(1rem, 2vw, 1.6rem); 
   min-width: 150px;
 }
 
@@ -697,7 +697,6 @@ h1, h2, h3, h4, h5, h6, .menu li a,
     margin: 0 auto;
     background-image: url('../resources/images/Homepage/Mob-IntroImage.png');
   }
-<<<<<<< HEAD
 
   .stereotype-img {
     background-image: url('../resources/images/Homepage/Mob-StereotypeImage.png');
@@ -762,6 +761,11 @@ h1, h2, h3, h4, h5, h6, .menu li a,
     color: #ffbf26;
    }
 
+   #next-section h1:hover {
+  color: #bc8f25;
+  }
+
+
    .footer-container{
     background-color:#ffbf26
    }
@@ -787,16 +791,6 @@ h1, h2, h3, h4, h5, h6, .menu li a,
     color: #ff008c;
   }
 }
-=======
-  p,
-  .intro-left,
-  .intro-desc,
-  .cards > li > p,
-  .contact-person,
-  .copyright {
-    font-family: 'PixelifySans', sans-serif !important;
-  }
->>>>>>> ca1941299135def738d620a3402e0f4e591cfe45
 }
 
 
