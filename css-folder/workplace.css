@@ -144,7 +144,7 @@ body {
       position: absolute;
       inset: 0;
       background: url('../resources/images/testimonies-images/testimonies-intro-image.png')
-                  center/cover no-repeat;
+      center/cover no-repeat;
       animation: imageFlash 12s infinite;
       z-index: -1;
     }
@@ -595,21 +595,95 @@ body {
         scroll-behavior: smooth;
     }
 
-/* FOOTER */
-    .gender-equality-header {
-        background: transparent;
-        color: #333;
-        padding: 2rem;
-        font-weight: normal;
-        position: relative;
-        font-family: 'Work Sans';
-        src: url('../resources/fonts/Work_Sans/WorkSans-VariableFont_wght.ttf') format('truetype');
-    }
+/* MOBILE */
+@media (max-width: 400px) {
+  .scrolling-text div {
+    font-size: 1rem;
+  }
 
-    .header-container {
-        margin: 0 auto;
-        background: #FFFF00;
-    }
+  .title-text {
+    font-size: clamp(2.5rem, 6vw, 96px);
+  }
+
+  .sub-title-text {
+    font-size: clamp(1.5rem, 6vw, 70px);
+  }
+
+  .section-title {
+    font-size: clamp(1.5rem, 6vw, 70px);
+  }
+
+  .section-text {
+    max-width: 85%;
+    text-align: left;
+  }
+
+  .section1-Causes {
+    text-align: left;
+    margin: 20px;
+  }
+
+  .cause-subtitle {
+    max-width: 100%;
+    text-align: left;
+    margin: 20px 10px 10px 10px;
+  }
+
+  .cause-text {
+    max-width: 85%;
+    margin: 0px 10px 20px 10px;
+  }
+}
+
+/* responsive */
+@media screen and (max-width: 768px) {
+  /* change width to 400 after finalizing */
+  .timeline::after {
+    left: 20px;
+  }
+  .timeline-item {
+    width: 100%;
+    padding: 20px 25px 20px 50px;
+  }
+  .timeline-item::before {
+    left: 10px;
+  }
+  .timeline-item.left,
+  .timeline-item.right {
+    left: 0;
+    padding-left: 50px;
+    padding-right: 25px;
+    text-align: left;
+  }
+}
+
+/* FONTS */
+@font-face {
+  font-family: "Anton";
+  src: url("../resources/fonts/Anton/Anton-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src: url("../resources/fonts/Work_Sans/WorkSans-VariableFont_wght.ttf")
+    format("truetype");
+}
+/* FOOTER */
+.gender-equality-header {
+  background: transparent;
+  color: #333;
+  padding: 2rem;
+  font-weight: normal;
+  position: relative;
+  font-family: "Work Sans";
+  src: url("../resources/fonts/Work_Sans/WorkSans-VariableFont_wght.ttf")
+    format("truetype");
+}
+
+.header-container {
+    margin: 0 auto;
+    background: #FFFF00;
+}
 
 /* Footer Styles */
     .footer-container {
@@ -687,57 +761,60 @@ body {
     }
 
 /* MOBILE */
-@media screen and (max-width: 768px) { /* change width to 400 after finalizing */
-    .scrolling-text div {
+@media screen and (max-width: 768px) {
+  /* change width to 400 after finalizing */
+  .scrolling-text div {
     font-size: 1rem;
-    }
-    .timeline::after {
+  }
+  .timeline::after {
     left: 20px;
-    }
-    .timeline-item {
+  }
+  .timeline-item {
     width: 100%;
     padding: 20px 25px 20px 50px;
-    }
-    .timeline-item::before {
+  }
+  .timeline-item::before {
     left: 10px;
-    }
-    .timeline-item.left,
-    .timeline-item.right {
+  }
+  .timeline-item.left,
+  .timeline-item.right {
     left: 0;
     padding-left: 50px;
     padding-right: 25px;
     text-align: left;
-    }
-    p,
+  }
+  p,
   li > p,
   .contact-person,
   .copyright {
-    font-family: 'PixelifySans', sans-serif !important;
+    font-family: "PixelifySans", sans-serif !important;
   }
    
 }
 
 /* FONTS */
-    @font-face {
-        font-family: 'Anton';
-        src: url('../resources/fonts/Anton/Anton-Regular.ttf') format('truetype');
-    }
+@font-face {
+  font-family: "Anton";
+  src: url("../resources/fonts/Anton/Anton-Regular.ttf") format("truetype");
+}
 
-    @font-face {
-        font-family: 'Work Sans';
-        src: url('../resources/fonts/Work_Sans/WorkSans-VariableFont_wght.ttf') format('truetype');
-    }
+@font-face {
+  font-family: "Work Sans";
+  src: url("../resources/fonts/Work_Sans/WorkSans-VariableFont_wght.ttf")
+    format("truetype");
+}
 
-    @font-face {
-      font-family: 'PixelifySans';
-      src: url('../resources/fonts/Pixelify/PixelifySans-VariableFont_wght.ttf') format('truetype');
-      font-weight: normal;
-      font-style: normal;
-    }
+@font-face {
+  font-family: "PixelifySans";
+  src: url("../resources/fonts/Pixelify/PixelifySans-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 
-    @font-face {
-      font-family: 'Jersey';
-      src: url('../resources/fonts/Jersey/Jersey10-Regular.ttf') format('truetype');
-      font-weight: normal;
-      font-style: normal;
-    }
+@font-face {
+  font-family: "Jersey";
+  src: url("../resources/fonts/Jersey/Jersey10-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
