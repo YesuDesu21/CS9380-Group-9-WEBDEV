@@ -145,7 +145,7 @@ body {
 #testimonies-intro-image{
   position: absolute; 
   inset: 0;            
-  background: url('../resources/images/testimonies-images/testimonies-intro-image.png')
+  background: url('../resources/images/testimonies/intro-image.png')
               center/cover no-repeat;
   animation: imageFlash 12s infinite;
   z-index: -1;  
