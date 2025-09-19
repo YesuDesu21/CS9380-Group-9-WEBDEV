@@ -130,7 +130,6 @@ body {
     }
 
 /* PAGE SUB-TITLE */
-<<<<<<< HEAD
 .sub-title-text {
   font-family: "Work Sans", sans-serif;
   font-size: 1.7rem;
@@ -139,7 +138,6 @@ body {
   margin-bottom: 200px;
   color: white;
 }
-=======
     .sub-title-text {
         font-family: 'Work Sans', sans-serif;
         font-size: 1.7rem;
@@ -148,7 +146,6 @@ body {
         margin-bottom: 200px;
         color: white;
     }
->>>>>>> b457e4c0cfcd24c441f2a16c6c692745da8633aa
 
 /*INTRO IMAGE TESTIMONIES*/
     #workplace-intro-image{
