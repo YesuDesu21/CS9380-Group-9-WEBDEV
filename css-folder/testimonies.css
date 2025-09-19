@@ -694,8 +694,48 @@ html {
    color: #ff008c;
    text-shadow: none;
 }
- 
+
+  @media only screen and (max-width: 480px) {
+    .testimonies-title {
+      font-size: 24px;
+    }
+
+    #statistics-section h2,
+    #testimonies-section h2,
+    #solutions-positive-experience-section h2 {
+      font-size: 20px;
+    }
+
+    .statistics-row {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .statistics-left {
+      flex-direction: column;
+    }
+
+    .statistics-row img {
+      margin-bottom: 15px;
+    }
+
+    .testimonies img {
+      width: 80px;
+      height: 80px;
+    }
+
+    .solution-1 img,
+    .solution-card img {
+      width: 60px;
+      height: 60px;
+    }
+
+    #next-section h1 {
+      font-size: 24px;
+    }
+  }
 }
+
 
 /* FONTS */
 @font-face {
