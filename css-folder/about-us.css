@@ -110,7 +110,7 @@ body {
     }
 
 /* ABOUT US SECTION */
-    .about-section {
+    #about-section {
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
@@ -118,7 +118,7 @@ body {
         padding: 210px;
     }
 
-    .about-title h1 {
+    #about-title h1 {
         font-family: 'Anton';
         font-size: 9rem;
         font-weight: 900;
@@ -129,7 +129,7 @@ body {
         color: #73CB7A;
     }
 
-    .about-text {
+    #about-text {
         font-family: 'Work Sans', sans-serif;
         max-width: 670px;
         font-size: 1.6rem;
@@ -138,12 +138,13 @@ body {
     }
 
 /* MEET THE TEAM */
-    .team-section {
-        padding: 60px;
-        margin-left: 140px;
+    #team-section {
+      display:grid;
+      padding: 60px;
+      margin-left: 140px;
     }
 
-    .team-title {
+    #team-title {
         font-family: 'Anton', sans-serif;
         font-size: 6rem;
         margin-bottom: 50px;
@@ -166,7 +167,7 @@ body {
         border-radius: 10px;
     }
 
-    .team-info h3 {
+    #team-info h3 {
         font-family: 'Anton', sans-serif;
         font-size: 1.5rem;
         margin-bottom: 30px;
@@ -183,14 +184,14 @@ body {
     }
 
 /* REFERENCES */
-    .references-section {
+    #references-section {
         padding: 60px;
         margin-top: -30px;
         margin-left: 140px;
         margin-right: 140px;
     }
 
-    .references-title {
+    #references-title {
         font-family: 'Anton', sans-serif;
         font-size: 6rem;
         margin-bottom: 50px;
@@ -248,7 +249,6 @@ body {
       font-family: 'Anton';
       src: url('../resources/fonts/Anton/Anton-Regular.ttf') format('truetype');
     }
-/*About us section*/
 
 /* FOOTER */
 .gender-equality-header {
@@ -343,30 +343,55 @@ body {
 }
 
 /* ===========MOBILE=================== */
-@media (max-width: 700px) {
+@media only screen and (max-width: 700px) {
   body {
-    background-image: url('../resources/images/About_Us/about-us-mobile-background.jpg');
-    background-repeat: repeat-y;   
-    background-position: center top;
-    background-size: contain;      
-    background-color: rgba(0, 0, 0, 0.4); /* <-- black with 40% opacity */
-    background-blend-mode: multiply;  
+    background: 
+                rgba(0,0,0,0.5)
+                url('../resources/images/About_Us/about-us-mobile-background.jpg')
+                no-repeat center center fixed;
+    background-size: cover;
+    background-blend-mode: darken;
+    align-items: center;
     color: white;
   }
 
   /* Optional: narrow the content so the background is visible on the sides */
-  .about-section,
-  .team-section,
+  #about-section,
+  #team-section,
   .references-section {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 20px;
     margin: 0 auto;
   }
 
+  #about-section{
+    flex-direction: column;
+    align-items: center;
+  }
   .team-img {
         width: 140px;
         height: 140px;
         object-fit: cover;
         border-radius: 10px;
     }
+  h1, h2{
+    font-family:'Jersey', sans-serif !important;
+  }
+  h3, p {
+  font-family: 'PixelifySans', sans-serif;
+  }
+
+  /* FONTS */
+@font-face {
+  font-family: 'PixelifySans';
+  src: url('../resources/fonts/Pixelify/PixelifySans-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Jersey';
+  src: url('../resources/fonts/Jersey/Jersey10-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 }
