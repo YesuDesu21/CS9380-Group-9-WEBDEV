@@ -215,7 +215,7 @@ body {
 #stereotypes h1 {
   font-size: clamp(2rem, 6vw, 96px);
   font-weight: 900;
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
   margin-top: 2rem;
   color: #4287f5;
 
@@ -234,7 +234,7 @@ body {
 .stereotype-img {
   grid-area: image;
   width: 100%;
-  max-width: 700px;    
+  max-width: 600px;    
   aspect-ratio: 16 / 9; 
   margin: 0 auto;
   background-image: url("../resources/images/Homepage/StereotypesImage.png");
@@ -247,8 +247,6 @@ body {
 .stereotype-text {
   grid-area: text;
 }
-
-
 
 .stereotype-text p {
   font-family: "Work Sans", sans-serif;
@@ -281,11 +279,12 @@ body {
     grid-template-columns: repeat(2, 1fr); 
   }
 }
+
 .card {
   position: relative;
   width: 100%;
   min-height: 100px;                 
-  height: clamp(100px, 35vw, 300px); 
+  height: clamp(100px, 35vw, 250px); 
   background: #fff;
   box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
@@ -346,7 +345,7 @@ body {
   font-size: clamp(0.85rem, 2vw, 1.2rem); 
   line-height: 1.4;
   font-weight: 500;
-  margin-top: 5%;
+  margin-top: 3%;
 }
 
 .card:nth-child(1) .face.face2 p {
@@ -386,6 +385,7 @@ body {
   line-height: 1.6;
   text-align: justify;
 }
+
 #next-section {
   max-width: 1500px;
   margin: 4rem auto 10rem auto;
