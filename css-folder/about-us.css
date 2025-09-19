@@ -359,7 +359,7 @@ html {
   margin: 0;
   text-align: center;
   letter-spacing: 3px;
-  color: #73CB7A; /* adjust to your theme */
+  color: #FF2DD1; /* adjust to your theme */
 }
 
 #about-title h2 {
@@ -370,6 +370,9 @@ html {
   margin-top: 1rem;
   text-align: center;
   color: #4B6CFF;
+}
+#team-title{
+  color: #15f5ba;
 }
 
 #about-text {
@@ -385,6 +388,9 @@ html {
     margin-left: 1rem;
     margin-right: 1rem;
     font-family: 'PixelifySans', sans-serif;
+  }
+  #references-title{
+    color: #fcf259;
   }
 
   #about-section {
@@ -416,11 +422,21 @@ html {
   text-decoration: none;
   color: white;               
   transition: color 0.3s ease; 
+  
 }
+
 
 #team-references li a:hover {
   color: #15F5BA;             
 }
+p,
+  .intro-left,
+  .intro-desc,
+  .cards > li > p,
+  .contact-person,
+  .copyright {
+    font-family: 'PixelifySans', sans-serif !important;
+  }
   /* FONTS */
   @font-face {
     font-family: 'PixelifySans';

@@ -645,6 +645,14 @@ p {
   .intro-img {
     margin: 0 auto;
   }
+  p,
+  .intro-left,
+  .intro-desc,
+  .cards > li > p,
+  .contact-person,
+  .copyright {
+    font-family: 'PixelifySans', sans-serif !important;
+  }
 }
 
 
