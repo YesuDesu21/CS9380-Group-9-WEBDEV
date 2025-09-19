@@ -769,6 +769,7 @@ h1, h2, h3, h4, h5, h6, .menu li a,
    .footer-container{
     background-color:#ffbf26
    }
+
 .text-pink {
   color: #ff008c;
   text-shadow: none;
@@ -790,9 +791,8 @@ h1, h2, h3, h4, h5, h6, .menu li a,
   100% {
     color: #ff008c;
   }
+ }
 }
-}
-
 
 /* FONTS */
 @font-face {
