@@ -118,7 +118,7 @@ body {
 .scrolling-text div {
   display: inline-block;
   padding-left: 100%;
-  font-size: clamp(1.5rem, 5vw, 48px);
+  font-size: clamp(2.5rem, 5vw, 48px);
   font-family: 'Anton', sans-serif;
   font-weight: bold;
   text-transform: uppercase;
@@ -622,6 +622,7 @@ p {
   }
 
   h1, h2, h3, h4, h5, h6, .menu li a,
+  .scrolling-text div,
   .main-heading,
   .intro-title,
   #next-section h1,
