@@ -159,13 +159,6 @@ body {
 }
 
 /* TEAM */
-#team-title {
-  text-align: center;
-  font-family: 'Anton', sans-serif;
-  font-size: clamp(2rem, 6vw, 96px);
-  margin-bottom: 2rem;
-  color: #FF2DD1;
-}
 
 .team-grid {
   display: grid;
