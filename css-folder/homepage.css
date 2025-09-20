@@ -1,11 +1,15 @@
 
 /* DESKTOP VERSION */
-/* [ line 622 for mobile version ] */
+/* [ line 616 for mobile version ] */
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+main {
+  margin: 1rem;
 }
 
 body {
@@ -231,17 +235,16 @@ body {
   gap: 1.5rem;
 }
 
-.stereotype-img {
-  grid-area: image;
+.stereotype-vid video {
   width: 100%;
-  max-width: 600px;    
-  aspect-ratio: 16 / 9; 
+  max-width: 700px;
+  aspect-ratio: 16 / 9;
+  display: block;
   margin: 0 auto;
-  background-image: url("../resources/images/Homepage/StereotypesImage.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+  object-fit: cover;
+   filter: grayscale(100%);
 }
+
 
 
 .stereotype-text {
@@ -417,24 +420,6 @@ body {
 
 #next-section h1:hover {
   color: #8f2478;
-}
-
-
-
-
-.highlight-pink {
-  font-weight: bold;
-  color: #ff2dd1;
-}
-
-.highlight-blue {
-  font-weight: bold;
-  color: #4287f5;
-}
-
-.highlight-teal {
-  font-weight: bold;
-  color: #15f5ba;
 }
 
 /* ANIMATIONS */
@@ -657,21 +642,16 @@ h1, h2, h3, h4, h5, h6, .menu li a,
   .intro-left,
   .stereotype-text p,
   .stereotype-summary,
-  .card .face.face1,
   .contact-person,
   .copyright {
     font-family: 'PixelifySans', sans-serif !important;
+    color: white !important;
   }
+
   .intro-title{
     color:#FFBF26 ;
   }
 
-  .highlight-teal,
-  .highlight-blue,
-  .highlight-pink {
-    color: white;
-    font-weight:normal;
-  }
 
   #introduction-gender-equality {
     grid-template-columns: 1fr; 
@@ -698,30 +678,13 @@ h1, h2, h3, h4, h5, h6, .menu li a,
     background-image: url('../resources/images/Homepage/Mob-IntroImage.png');
   }
 
-  .stereotype-img {
-    background-image: url('../resources/images/Homepage/Mob-StereotypeImage.png');
-  }
+  .stereotype-vid video {
+    filter: none; }
 
-  p,
-  .intro-left,
-  .stereotype-text p,
-  .stereotype-summary{
-    color: white;
-  }
 
 
 .card .face.face1 p {
   color: black !important;
-}
-
-.card .face.face1 p .highlight-teal {
-  color: #15f5ba !important;
-}
-.card .face.face1 p .highlight-blue {
-  color: #4287f5 !important;
-}
-.card .face.face1 p .highlight-pink {
-  color: #ff008c !important;
 }
 
 
