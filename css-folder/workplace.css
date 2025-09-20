@@ -642,6 +642,7 @@ html {
 
   .title-text {
     font-size: 3.5rem;
+    color: #15f5ba;
   }
 
   .sub-title-text {
@@ -652,7 +653,11 @@ html {
   .section-title {
     text-align: left;
     margin: 20px;
-    color: #8ee1fa;
+    color: #b47bf5;
+  }
+
+  .section1-Solutions {
+    color: #b47bf5;
   }
 
   .section-text {
@@ -673,13 +678,14 @@ html {
   .section1-Causes {
     text-align: left;
     margin: 20px;
-    color: #8ee1fa;
+    color: #b47bf5;
   }
 
   .cause-subtitle {
     max-width: 100%;
     text-align: left;
     margin: 0px 0px 20px 40px;
+    color: #15f5ba;
   }
 
   .cause-text {
@@ -694,7 +700,7 @@ html {
   }
 
   .section1-Impacts {
-    color: #8ee1fa;
+    color: #b47bf5;
   }
 
   .image-grid {
@@ -766,6 +772,10 @@ html {
   }
   .timeline .timeline-item.right .content p {
     color: white;
+  }
+
+  .footer-container {
+    background-color: #ffbf26;
   }
 }
 
