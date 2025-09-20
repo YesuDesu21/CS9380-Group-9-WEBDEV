@@ -255,7 +255,7 @@ body {
 .testimonies h3 {
     font-family: 'Anton', sans-serif;
     font-size: 1.8rem;
-    margin-bottom: 15px;
+    margin: 0px;
     color: #8a2be2;
 }
 
@@ -280,12 +280,12 @@ body {
 /* SOLUTIONS */
 #solutions-positive-experience-section h2 {
     font-family: 'Anton', sans-serif;
-    color: #FF2DD1;
-    font-size: 5rem;
+    color: #4287f5;
+  font-size: clamp(2rem, 6vw, 96px);
     text-align: center;
     display: block;
     grid-column: 1 / -1;
-    margin-top: 30px;
+    margin-top: 0;
     margin-bottom: 60px;
     line-height: 1.1;
 }
