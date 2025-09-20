@@ -277,7 +277,7 @@ font-size: clamp(1rem, 2.5vw, 1.2rem);
         --label-size: 40px;
         --label-dot-size: 15px;
         --label-line-h-current: 4rem;
-        --title-top: 4rem;
+        --title-top: 2rem;
         --info-top: 8rem;
     }
     
@@ -366,19 +366,19 @@ font-size: clamp(1rem, 2.5vw, 1.2rem);
   .cards > li > h2{
     font-family: 'Anton', sans-serif; 
     font-weight: 900;
-    font-size: 4rem;
+   font-size: clamp(2.5rem, 3vw, 4rem);
     top: var(--title-top);
     opacity: var(--title-opacity,0);
     translate: 0 var(--title-offset-y);
     transition: var(--duration) ease-in-out var(--title-delay,0ms);
-    color: #15f5ba;
+    color: #FF2DD1;
   }
 .cards > li > p{
   top: var(--info-top);
-  margin: 6rem auto;
+  margin: 2rem auto;
   width: var(--info-width);
   z-index: 2;
-   font-size: clamp(1rem, 2.5vw, 1.2rem);
+  font-size: clamp(0.75rem, 1.5vw, 1rem);
   font-family: 'Work Sans', Arial, sans-serif; 
   font-weight: 400;
   line-height: 1.6;
