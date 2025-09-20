@@ -293,6 +293,55 @@ body {
 }
 
 /* Each solution card */
+
+.safe-reporting {
+  grid-area: image;
+  width: 100%;
+  height: auto;
+  min-height: 250px;
+  background-image: url('../resources/images/Testimonies/safe.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 0px;
+}
+
+.empowerment {
+  grid-area: image;
+  width: 100%;
+  height: auto;
+  min-height: 250px;
+  background-image: url('../resources/images/Testimonies/empower.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 0px;
+}
+
+.role-models {
+  grid-area: image;
+  width: 100%;
+  height: auto;
+  min-height: 250px;
+  background-image: url('../resources/images/Testimonies/role.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 0px;
+}
+
+.community-engagement {
+  grid-area: image;
+  width: 100%;
+  height: auto;
+  min-height: 250px;
+  background-image: url('../resources/images/Testimonies/com.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 0px;
+}
+
 .solution-card, .solution-1 {
   background: #fff;
   border-radius: 8px;
@@ -482,8 +531,10 @@ html {
 /* !! MOBILE !! */
 @media only screen and (max-width: 768px) {
   body {
-    background: url('../resources/images/testimonies/Carrot.png') no-repeat center center fixed;
+    background: rgba(0,0,0,0.5)
+     url('../resources/images/testimonies/Carrot.png') no-repeat center center fixed;
     background-size: cover; 
+    background-blend-mode: darken;
     font-family: 'Pixelify', sans-serif;
   }
 
@@ -516,7 +567,7 @@ html {
   .testimonies-title {
     color: #FF2DD1;
     text-align: center;
-    font-size: 45px;
+    font-size: 55px;
     margin-top: 20rem;
     margin-bottom: 25rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -538,7 +589,7 @@ html {
   #statistics-section h2 {
     color: #FF2DD1;
     text-align: center;
-    font-size: 30px;
+    font-size: 50px;
     margin-bottom: 30px;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   }
@@ -562,8 +613,8 @@ html {
   }
 
   .statistics-row img {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     object-fit: cover;
     border-radius: 50%;
     margin: 0 15px;
@@ -572,7 +623,7 @@ html {
 
   .statistics-row p {
     color: white;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.5;
     flex: 1;
   }
@@ -585,7 +636,7 @@ html {
   #testimonies-section h2 {
    color: #FF2DD1;
     text-align: center;
-    font-size: 30px;
+    font-size: 50px;
     margin-bottom: 30px;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   }
@@ -611,23 +662,23 @@ html {
 
   .testimonies h3 {
     color: #FFBF26;
-    font-size: 18px;
+    font-size: 19px;
     margin-bottom: 15px;
   }
 
   .testimonies p {
     color: white;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.6;
     text-align: left;
     font-style: italic;
   }
 
   .summary {
-    background: rgba(21, 245, 186, 0.1);
+    background: rgba(39, 36, 39, 0.1);
     padding: 20px;
     border-radius: 10px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-size: 16px;
     line-height: 1.6;
     text-align: center;
@@ -643,44 +694,72 @@ html {
   #solutions-positive-experience-section h2 {
     color: #FF2DD1;
     text-align: center;
-    font-size: 30px;
+    font-size: 50px;
     margin-bottom: 30px;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     line-height: 1.2;
   }
+ .safe-reporting,
+ .empowerment,
+ .role-models,
+ .community-engagement {
+  width: 15rem;
+  height: 10rem;
+  border-radius: 50%;
+  margin: 0 auto 15px auto; 
+  border: 3px solid #FF2DD1; 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
 
-  #solution-card {
-    margin-bottom: 20px;
-  }
+.safe-reporting {
+  background-image: url('../resources/images/Testimonies/efas.jpg');
+}
 
-  .solution-1,
-  .solution-card {
-    background: rgba(0, 0, 0, 0.7);
-    padding: 20px;
-    border-radius: 15px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    border: 2px solid #FFBF26;
-  }
+.empowerment {
+  background-image: url('../resources/images/Testimonies/emp.jpg');
+}
 
-  .solution-1 img,
-  .solution-card img {
-    width: 80px;
-    height: 80px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-bottom: 15px;
-    border: 3px solid #FF2DD1;
-  }
+.role-models {
+  background-image: url('../resources/images/Testimonies/models.jpg');
+}
 
-  .solution-1 p,
-  .solution-card p {
-    color: white;
-    font-size: 14px;
-    line-height: 1.5;
-  }
+.community-engagement {
+  background-image: url('../resources/images/Testimonies/engage.jpg');
+}
 
-     #next-section h1 {
+#solution-card {
+  margin-bottom: 20px;
+}
+
+.solution-1,
+.solution-card {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border: 2px solid #FFBF26;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+
+
+.solution-1 p,
+.solution-card p {
+  color: white;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 10px; 
+}
+
+   #next-section h1 {
     color: #ffbf26;
    }
 
