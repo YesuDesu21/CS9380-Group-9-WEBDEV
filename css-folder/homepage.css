@@ -533,9 +533,7 @@ p {
   padding: 2rem 1rem; 
   font-weight: normal;
   position: relative;
-  font-family: "Work Sans";
-  src: url("../resources/fonts/Work_Sans/WorkSans-VariableFont_wght.ttf")
-    format("truetype");
+  font-family: "Work Sans", sans-serif;
 }
 
 .header-container {
