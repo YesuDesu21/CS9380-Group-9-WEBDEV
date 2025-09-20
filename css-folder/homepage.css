@@ -348,7 +348,7 @@ body {
   font-size: clamp(0.85rem, 2vw, 1.2rem); 
   line-height: 1.4;
   font-weight: 500;
-  margin-top: 3%;
+  margin-top: 1%;
 }
 
 .card:nth-child(1) .face.face2 p {
@@ -687,22 +687,24 @@ h1, h2, h3, h4, h5, h6, .menu li a,
   color: black !important;
 }
 
-
 .card:nth-child(1) .face.face2 p {
-  color: #ff008c;
+  color: #4287f5 !important;
   text-shadow: 2px 2px 5px white;
 }
+
 .card:nth-child(2) .face.face2 p {
-  color: #6807d2;
-    text-shadow: 2px 2px 5px white;
+  color: #ff008c !important;
+  text-shadow: 2px 2px 5px white;
 }
+
 .card:nth-child(3) .face.face2 p {
-  color: #4287f5;
-    text-shadow: 2px 2px 5px white;
+  color: #4287f5 !important;
+  text-shadow: 2px 2px 5px white;
 }
+
 .card:nth-child(4) .face.face2 p {
-  color: #ff008c;
-    text-shadow: 2px 2px 5px white;
+  color: #ff008c !important;
+  text-shadow: 2px 2px 5px white;
 }
 
   .card:nth-child(1) .face.face2 {
