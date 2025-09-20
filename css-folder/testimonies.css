@@ -217,7 +217,7 @@ body {
 .statistics-row p {
   width: 50%;
   line-height: 1.6;
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
   text-align: justify;
   font-family: 'Work Sans', sans-serif;
 }
@@ -256,12 +256,12 @@ body {
     font-family: 'Anton', sans-serif;
     font-size: 1.8rem;
     margin-bottom: 15px;
-    color: #C930A7;
+    color: #8a2be2;
 }
 
 .testimonies p {
     font-family: 'Work Sans', sans-serif;
-    font-size: 1.4rem;
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
     line-height: 1.2;
     max-width: 1000px;
     text-align: justify;
@@ -270,7 +270,7 @@ body {
 .summary {
     margin: 150px auto 150px auto;
     font-family: 'Work Sans', sans-serif;
-    font-size: 1.4rem;
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
     line-height: 1.2;
     max-width: 1200px;
     text-align: justify;
@@ -368,7 +368,7 @@ body {
 
 .solution-card p,
 .solution-1 p {
-  font-size: 1rem;
+  font-size: clamp(0.75rem, 1.5vw, 1rem);
   line-height: 1.6;
   color: #333;
   text-align: justify;
@@ -385,10 +385,10 @@ body {
 
 #next-section h1 .sub-heading {
   display: block;
-  font-size: 48px;
+  font-size: clamp(1.2rem, 4vw, 2.5rem); 
   font-weight: 700;
   margin-top: 0;
-  line-height: 1;
+  line-height: 1.2; 
 }
 
 #next-section a {
@@ -397,9 +397,9 @@ body {
 
 #next-section h1 {
   font-family: 'Anton', sans-serif;
-  font-size: 72px;
+  font-size: clamp(2rem, 6vw, 4.5rem); 
   font-weight: 900;
-  line-height: 1.1;
+  line-height: 1.05;
   color: #FF2DD1;
   transition: color 0.3s ease;
 }
